@@ -15,6 +15,10 @@ const fetchDemoEvents = async () => {
             venue: "Ajeenkya DY Patil University",
             address: "Lohegaon, Pune",
             city: "Pune",
+            location: {
+                latitude: 18.5679,
+                longitude: 73.9143
+            },
             registrationLink: "https://example.com",
             source: "Demo",
             externalId: "demo-ai-workshop-001",
@@ -35,6 +39,10 @@ const fetchDemoEvents = async () => {
             venue: "Viman Nagar",
             address: "Viman Nagar, Pune",
             city: "Pune",
+            location: {
+                latitude: 18.5679,
+                longitude: 73.9143
+            },
             registrationLink: "https://example.com",
             source: "Demo",
             externalId: "demo-startup-meetup-002",
@@ -55,6 +63,10 @@ const fetchDemoEvents = async () => {
             venue: "Pune IT Park",
             address: "Hinjewadi, Pune",
             city: "Pune",
+            location: {
+                latitude: 18.5913,
+                longitude: 73.7389
+            },
             registrationLink: "https://example.com",
             source: "Demo",
             externalId: "demo-gdg-event-003",
@@ -75,6 +87,10 @@ const fetchDemoEvents = async () => {
             venue: "COEP Technological University",
             address: "Shivajinagar, Pune",
             city: "Pune",
+            location: {
+                latitude: 18.5308,
+                longitude: 73.8475
+            },
             registrationLink: "https://example.com",
             source: "Demo",
             externalId: "demo-cyber-004",
@@ -95,6 +111,10 @@ const fetchDemoEvents = async () => {
             venue: "Baner IT Hub",
             address: "Baner, Pune",
             city: "Pune",
+            location: {
+                latitude: 18.5590,
+                longitude: 73.7868
+            },
             registrationLink: "https://example.com",
             source: "Demo",
             externalId: "demo-cloud-005",
@@ -115,6 +135,10 @@ const fetchDemoEvents = async () => {
             venue: "Magarpatta City",
             address: "Hadapsar, Pune",
             city: "Pune",
+            location: {
+                latitude: 18.5089,
+                longitude: 73.9260
+            },
             registrationLink: "https://example.com",
             source: "Demo",
             externalId: "demo-data-006",
@@ -135,6 +159,10 @@ const fetchDemoEvents = async () => {
             venue: "Kharadi IT Park",
             address: "Kharadi, Pune",
             city: "Pune",
+            location: {
+                latitude: 18.5515,
+                longitude: 73.9470
+            },
             registrationLink: "https://example.com",
             source: "Demo",
             externalId: "demo-web-007",
@@ -155,6 +183,10 @@ const fetchDemoEvents = async () => {
             venue: "Symbiosis Institute Pune",
             address: "Lavale, Pune",
             city: "Pune",
+            location: {
+                latitude: 18.5200,
+                longitude: 73.7200
+            },
             registrationLink: "https://example.com",
             source: "Demo",
             externalId: "demo-hackathon-008",
@@ -175,6 +207,10 @@ const fetchDemoEvents = async () => {
             venue: "Aundh IT Center",
             address: "Aundh, Pune",
             city: "Pune",
+            location: {
+                latitude: 18.5615,
+                longitude: 73.8077
+            },
             registrationLink: "https://example.com",
             source: "Demo",
             externalId: "demo-blockchain-009",
@@ -195,6 +231,10 @@ const fetchDemoEvents = async () => {
             venue: "JW Marriott Pune",
             address: "Senapati Bapat Road, Pune",
             city: "Pune",
+            location: {
+                latitude: 18.5308,
+                longitude: 73.8375
+            },
             registrationLink: "https://example.com",
             source: "Demo",
             externalId: "demo-wit-010",
@@ -205,17 +245,6 @@ const fetchDemoEvents = async () => {
         }
 
     ];
-
-
-    // Adding latitude and longitude for nearby search
-    events.forEach(event => {
-
-        event.location = {
-            latitude: 18.5204,
-            longitude: 73.8567
-        };
-
-    });
 
 
     return events;
