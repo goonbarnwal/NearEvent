@@ -1,0 +1,253 @@
+.home{
+
+    min-height:90vh;
+
+    text-align:center;
+
+    padding:60px 40px;
+
+    background:#f8fafc;
+
+}
+
+
+
+.home h1{
+
+    font-size:42px;
+
+    color:#111827;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.home > p{
+
+    max-width:750px;
+
+    margin:auto;
+
+    font-size:18px;
+
+    color:#4b5563;
+
+    line-height:1.6;
+
+}
+
+
+
+
+
+.home-search{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:15px;
+
+    margin:40px auto;
+
+}
+
+
+
+.home-search input{
+
+    width:450px;
+
+    padding:15px 20px;
+
+    border:1px solid #d1d5db;
+
+    border-radius:10px;
+
+    font-size:16px;
+
+    outline:none;
+
+}
+
+
+
+
+
+.home-search input:focus{
+
+    border-color:#2563eb;
+
+}
+
+
+
+
+
+.home-search button{
+
+    background:#2563eb;
+
+    color:white;
+
+    border:none;
+
+    padding:15px 25px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+}
+
+
+
+.home-search button:hover{
+
+    background:#1d4ed8;
+
+}
+
+
+
+
+
+
+.home h2{
+
+    margin-top:50px;
+
+    font-size:30px;
+
+    color:#111827;
+
+}
+
+
+
+
+
+
+.category-section{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+    margin-top:30px;
+
+}
+
+
+
+
+
+
+.category-card{
+
+    background:white;
+
+    padding:30px 20px;
+
+    border-radius:15px;
+
+    border:1px solid #e5e7eb;
+
+    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+
+    transition:0.3s;
+
+}
+
+
+
+.category-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+
+
+
+
+.category-card h3{
+
+    margin-top:15px;
+
+    color:#1f2937;
+
+}
+
+
+
+
+
+.category-card p{
+
+    color:#6b7280;
+
+    line-height:1.5;
+
+}
+
+
+
+
+
+@media(max-width:900px){
+
+
+.category-section{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+
+.home-search{
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+
+.home-search input{
+
+    width:90%;
+
+}
+
+
+}
+
+
+
+
+
+@media(max-width:500px){
+
+
+.category-section{
+
+    grid-template-columns:1fr;
+
+}
+
+
+.home h1{
+
+    font-size:30px;
+
+}
+
+
+}
