@@ -2,11 +2,11 @@ import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import "./Navbar.css";
 
+
 function Navbar() {
 
 
   const navigate = useNavigate();
-
 
 
   const [loggedIn, setLoggedIn] = useState(
@@ -14,43 +14,27 @@ function Navbar() {
   );
 
 
-
   const user = JSON.parse(
     localStorage.getItem("user")
   );
 
 
-
-
-
-
   const handleLogout = () => {
-
 
     localStorage.removeItem("token");
 
     localStorage.removeItem("user");
 
-
     setLoggedIn(false);
 
-
     navigate("/login");
-
 
   };
 
 
-
-
-
-
-
   return (
 
-
     <nav className="navbar">
-
 
 
       <h2>
@@ -59,10 +43,7 @@ function Navbar() {
 
 
 
-
-
       <div className="nav-links">
-
 
 
         <Link to="/">
@@ -70,20 +51,9 @@ function Navbar() {
         </Link>
 
 
-
-
-
         <Link to="/events">
           Events
         </Link>
-
-        {
-   loggedIn && user?.role === "admin" && (
-    <Link to="/admin">
-        Admin Dashboard
-    </Link>
-  )
-}
 
 
 
@@ -92,16 +62,15 @@ function Navbar() {
 
             <>
 
+
               <Link to="/create-event">
                 Create Event
               </Link>
 
 
-
               <Link to="/my-events">
                 My Events
               </Link>
-
 
 
               <Link to="/my-registrations">
@@ -113,10 +82,6 @@ function Navbar() {
 
           )
         }
-
-
-
-
 
 
 
@@ -135,23 +100,15 @@ function Navbar() {
 
 
 
-
-
               <Link to="/profile">
                 Profile
               </Link>
 
 
 
-
-
               <button onClick={handleLogout}>
-
                 Logout
-
               </button>
-
-
 
 
             </>
@@ -160,9 +117,7 @@ function Navbar() {
           )
 
 
-
           :
-
 
 
           (
@@ -176,31 +131,23 @@ function Navbar() {
 
 
 
-
-
               <Link to="/signup">
                 Signup
               </Link>
 
 
-
             </>
-
 
           )
 
-
         }
-
 
 
 
       </div>
 
 
-
     </nav>
-
 
   );
 
